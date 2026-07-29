@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora Arthur">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora | Arthur</title>
+</head>
+<body>
+    <main class="calculadora">
+        <h1>Arthur Laurentis</h1>
+        <section class="calculadora_section">
+            <input type="text" disabled id="caixa_texto" value= "">
+            <div class="caixa_botoes">
+                <button onclick="deletar()">AC</button>
+                <button onclick="apagar()">&lt;</button>
+                <button onclick="insertValue('/')">/</button>
+                <button onclick="insertValue('*')">*</button>
+                <button onclick="insertValue('7')">7</button>
+                <button onclick="insertValue('8')">8</button>
+                <button onclick="insertValue('9')">9</button>
+                <button onclick="insertValue('-')">-</button>
+                <button onclick="insertValue('4')">4</button>
+                <button onclick="insertValue('5')">5</button>
+                <button onclick="insertValue('6')">6</button>
+                <button onclick="insertValue('+')">+</button>
+                <button onclick="insertValue('1')">1</button>
+                <button onclick="insertValue('2')">2</button>
+                <button onclick="insertValue('3')">3</button>
+                <button class="btn_0" onclick="insertValue('0')">0</button>
+                <button onclick="insertValue('.')">.</button>
+                <button class="btn_igual" onclick="resultado()">=</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
